@@ -26,7 +26,6 @@ nums_moscow = [i for i in nums_mod if cod499 in i or cod495 in i]
 print(nums_moscow)
 print()
 
-
 # P.S.
 # добавим в задачу условие: убрать дубликаты и воспользуемся множеством
 nums_moscow = set(nums_moscow)

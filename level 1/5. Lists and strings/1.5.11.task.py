@@ -7,7 +7,7 @@ nums = ['+7 (960) 870-22-29', '+7 (926) 184-98-14', '+7 (960) 750-30-94', '+7 (9
 cod499 = '499'
 cod495 = '495'
 
-nums_moscow = [i for i in nums if cod499 in i or cod495 in i]
+nums_moscow = [i for i in nums if cod499 == i[4:7] or cod495 == i[4:7]]
 print(nums_moscow)
 print()
 
@@ -23,5 +23,5 @@ cod499 = '499'
 cod495 = '495'
 
 for i in nums:
-    if cod499 in i or cod495 in i:
+    if cod499 == i[4:7] or cod495 == i[4:7]:
         print(i)

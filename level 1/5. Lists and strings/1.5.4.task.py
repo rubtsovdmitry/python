@@ -8,6 +8,7 @@ result = round((amount / lenth), 4)
 print(result)
 print()
 
+###############################
 
 # второй способ
 
