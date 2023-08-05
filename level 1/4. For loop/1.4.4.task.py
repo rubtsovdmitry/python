@@ -5,7 +5,6 @@ for i in range(0, 7):
     print(10 ** i)
 print()
 
-
 # второй вариант
 print("Второй вариант")
 print()
@@ -15,7 +14,6 @@ for i in b:
     a += i
     print(a)
 print()
-
 
 # третий вариант
 print("Третий вариант")
