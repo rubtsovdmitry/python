@@ -38,7 +38,6 @@ for i in items:
 
 # Теперь будем искать наименование товара и его бренд с самой дорогой ценой
 result = list()
-a = " "
 for i in items:
     if i["price"] == expensive_price:
         result.append(i["name"] + " " + i["brand"] + " " + str(i["price"]))
