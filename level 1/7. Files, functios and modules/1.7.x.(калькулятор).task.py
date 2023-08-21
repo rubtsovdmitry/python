@@ -1,3 +1,17 @@
+def my_calculate(digit1, sign, digit2):                                                                 # сама логика калькулятора
+    if sign == "+":                                                                                         
+        result = digit1 + digit2            
+    elif sign == "-":
+        result = digit1 - digit2
+    elif sign == "/" and digit2 != 0:
+        result = digit1 / digit2
+    elif sign == "/" and digit2 == 0:
+        result = " Деление на ноль невозможно."
+    else:
+        result = digit1 * digit2
+    return result
+
+
 # ввод и проверка данных
 digit1_test = ""                                                                                        # создадим переменную для запуска цикла
 digit2_test = ""                                                                                        # создадим переменную для запуска цикла
@@ -13,17 +27,7 @@ while digit1_test.isdigit() == False and digit2_test.isdigit() == False:        
         digit1_test = str(int(digit1))          
         digit2_test = str(int(digit2))          
 while sign not in SIGN:                                                                                 # проверка знака действия 
-    sign = input("Введите знак операции ")          
+    sign = input("Введите знак операции: ")          
 
-if sign == "+":                                                                                         # вычисление результата
-    result = digit1 + digit2            
-elif sign == "-":
-    result = digit1 - digit2
-elif sign == "/" and digit2 != 0:
-    result = digit1 / digit2
-elif sign == "/" and digit2 == 0:
-    result = " Деление на ноль невозможно."
-else:
-    result = digit1 * digit2
-
+result = my_calculate(digit1, sign, digit2)
 print(f'{digit1} {sign} {digit2} = {result}')
