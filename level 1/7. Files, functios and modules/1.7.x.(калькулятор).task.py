@@ -1,15 +1,14 @@
 def my_calculate(digit1, sign, digit2):                                                                 # сама логика калькулятора
     if sign == "+":                                                                                         
-        result = digit1 + digit2            
+        return digit1 + digit2                                                                          # функция выполняется до первого return
     elif sign == "-":
-        result = digit1 - digit2
+        return digit1 - digit2
     elif sign == "/" and digit2 != 0:
-        result = digit1 / digit2
+        return digit1 / digit2
     elif sign == "/" and digit2 == 0:
-        result = " Деление на ноль невозможно."
+        return " Деление на ноль невозможно."
     else:
-        result = digit1 * digit2
-    return result
+        return digit1 * digit2
 
 
 # ввод и проверка данных
