@@ -1,5 +1,4 @@
 estimation = {
-    "A+": 4.0,
     "A": 4.0,
     "A-": 3.7,
     "B+": 3.3,
@@ -15,6 +14,6 @@ estimation = {
 letter = input("%50s" % "Введите буквенную оценку: ")
 
 if letter in estimation:                     
-    print("%49s" % "Ваша оценка", estimation[letter])
+    print("%49s" % "Ваша оценка:", estimation[letter])
 else:
     print("%49s" % "Такой оценки нет")
