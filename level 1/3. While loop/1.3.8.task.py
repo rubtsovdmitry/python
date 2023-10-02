@@ -34,5 +34,4 @@ if point <= 3:
     print("%125s" % "Вы ввели всего две точки. Не получилась фигура многоугольника.")
 else:
     perimetr += my_function(last_point_x, last_point_y, first_x, first_y)
-
-print("%125s" % "Периметр многоугольника", int(perimetr))
+    print("%125s" % "Периметр многоугольника", int(perimetr))
