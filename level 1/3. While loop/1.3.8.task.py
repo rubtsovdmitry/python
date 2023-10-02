@@ -1,23 +1,38 @@
-def new_price(amount):
-    amount_in_cents = int(amount * 100)
-    need_mod = amount_in_cents % 5 
-    need_mod = 0 if need_mod < 2.5 else 5
-    amount_in_cents = (amount_in_cents // 5) * 5 + need_mod
-    amount = amount_in_cents / 100
-    return amount
+import math
 
-print("%50s" % "Вводите суммы покупок в формате xx.xx (для отмены введите 0)")
-each_price = list()
-each_real_price = list()
-count = 1
+def my_function(last_point_x, last_point_y, x, y):
+    dist = math.sqrt((last_point_x - x) ** 2 + (last_point_y - y) ** 2)
+    return dist
+
+
+print("%125s" % "Программа считает периметр многоугольника по введённым точкам в системе координат на плоскости.")
+print("%125s" % "Пусть значения координат будут целыми цислами.")
+print("%125s" % "Чтобы получился многоугольник, а не прямая координаты не должны лежать на одной линии.")
+point = 1
+perimetr = 0
 while True:
-    amount = float(input("%51s" % f"Введите сумму {count}-й покупки: "))
-    if amount == 0:
-        break    
-    each_price.append(amount)
-    each_real_price.append(new_price(amount))
-    count += 1
+    x = input("%126s" % f"Введите координаты {point}-й точки по оси абсцисс: ")
+    y = input("%126s" % f"Введите координаты {point}-й точки по оси ординат: ")
+    if x == "" or y == "":                                                                  # здесь цикл прерывается по условию задачи (совместно со следующим условием прерывания цикла является избыточным)
+        break
+    try:
+        x = int(x)
+        y = int(y)
+    except:                                                                                 # здесь цикл прерывается по если введены некорректные данные
+        print("%125s" % "Введены не числа.")
+        break
+    if point == 1:                                                                          # запомним координаты первой точки
+        first_x = int(x)
+        first_y = int(y)
+    if point > 1:
+        perimetr += my_function(last_point_x, last_point_y, x, y)
+    last_point_x = x
+    last_point_y = y
+    point += 1                                                                              # следующая точка
 
-print()
-print("%50s%15.2f" % ("Сумма всех покупок без округления равна:", sum(each_price)))
-print("%50s%15.2f" % ("Сумма всех покупок с округлением равна:", sum(each_real_price)))
+if point <= 3:
+    print("%125s" % "Вы ввели всего две точки. Не получилась фигура многоугольника.")
+else:
+    perimetr += my_function(last_point_x, last_point_y, first_x, first_y)
+
+print("%125s" % "Периметр многоугольника", int(perimetr))
