@@ -169,6 +169,28 @@
 
 ##########################
 
+# 1.5.20.task.py
+# Условие:
+# Пика.
+# Нужно создать с помощью вложенных списков двумерный массив и вывести пику из "x". Затем повернуть её, три раза.  
+#   №1                      №2                  №3              №4
+#   x                       xxxxxxxxxxxxx               x             x  
+#   xx                       xxxxxxxxxxx               xx             x  
+#   xxx                       xxxxxxxxx               xxx             x  
+#   xxxx                       xxxxxxx               xxxx            xxx   
+#   xxxxx                       xxxxx               xxxxx           xxxxx
+#   xxxxxx                       xxx               xxxxxx          xxxxxxx 
+#   xxxxxxxxx                     x             xxxxxxxxx         xxxxxxxxx  
+#   xxxxxx                        x                xxxxxx        xxxxxxxxxxx
+#   xxxxx                         x                 xxxxx       xxxxxxxxxxxxx
+#   xxxx                                             xxxx
+#   xxx                                               xxx
+#   xx                                                 xx
+#   x                                                   x
+
+
+##########################
+
 # 1.5.21.task.py
 # Условие:
 # Список в предложение.
