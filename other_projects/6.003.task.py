@@ -19,6 +19,7 @@ for i in diapazon:
     try:
         result = pyinputplus.inputInt(prompt=temp[0], timeout=30)                   # 30 секунд на ответ, ответ не цифра не является ошибкой
         if result != temp[-1]:                                                      # ответ не верен - ошибка
+            print("Ошибка.")    
             mistakes += 1
     except:
         print("Время вышло.")                                                       # ответ не верен - ошибка
