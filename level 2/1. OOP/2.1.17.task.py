@@ -120,7 +120,7 @@ BOX_LENGTH = 3
 FULL_GRID_SIZE = GRID_LENGTH * GRID_LENGTH
 
 """загрузить шаблоны раскладки игры из sudokupuzzles.txt"""
-with open('sudokupuzzles.txt') as puzzleFile:
+with open('2.1.17.task.txt') as puzzleFile:
     puzzles = puzzleFile.readlines()                                                                            # в переменной находится список с элементами-строками
 
 """удалим знак переноса строки в каждом элементе списка"""
