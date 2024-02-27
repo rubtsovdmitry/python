@@ -194,3 +194,9 @@
 # 4.24.task.py
 # Графы. Алгоритм Дейкстры.
 # Реализовать граф с помощью алгоритма Дейкстры. Смотреть условие задачи: https://python.rubtsovdmitry.ru/content/4_algorithms/graphs_2_dijkstra's_algorithm.html
+
+##########################################################
+
+# 4.25.task.py
+# Графы. Алгоритм Дейкстры. Задача №2.
+# Реализовать граф с помощью алгоритма Дейкстры. Смотреть условие задачи: https://python.rubtsovdmitry.ru/content/4_algorithms/graphs_3_dijkstra's_algorithm.html
