@@ -200,3 +200,9 @@
 # 4.25.task.py
 # Графы. Алгоритм Дейкстры. Задача №2.
 # Реализовать граф с помощью алгоритма Дейкстры. Смотреть условие задачи: https://python.rubtsovdmitry.ru/content/4_algorithms/graphs_3_dijkstra's_algorithm.html
+
+##########################################################
+
+# 4.26.task.py
+# Жадные алгоритмы. Задача составления расписания.
+# Смотреть условие программы с иллюстрациями: https://python.rubtsovdmitry.ru/content/4_algorithms/greed_1_schedule.html
