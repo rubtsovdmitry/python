@@ -218,3 +218,9 @@
 # 4.28.task.py
 # Жадные алгоритмы. Задача о покрытии множества.
 # Смотреть условие программы с иллюстрациями: https://python.rubtsovdmitry.ru/content/4_algorithms/greed_3_covering_set.html
+
+##########################################################
+
+# 4.29.task.py
+# Жадные алгоритмы. Задача о коммивояжере.
+# Смотреть условие программы с иллюстрациями: https://python.rubtsovdmitry.ru/content/4_algorithms/greed_4_traveling_salesman.html
